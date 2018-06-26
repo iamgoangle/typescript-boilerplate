@@ -1,0 +1,51 @@
+{
+  "name": "typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "TS Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run tslint && npm run build-ts && echo \"Build finished\" && exit",
+    "serve": "npm run build && node dist/server.js",
+    "serve:dev": "npm run build && nodemon dist/server.js",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamgoangle/typescript-boilerplate.git"
+  },
+  "keywords": [
+    "ts"
+  ],
+  "author": "Teerapong Singthong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamgoangle/typescript-boilerplate/issues"
+  },
+  "homepage": "https://github.com/iamgoangle/typescript-boilerplate#readme",
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "@types/jest": "^23.1.2",
+    "@types/morgan": "^1.7.35",
+    "@types/node": "^10.3.6",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/dotenv": "^4.0.3",
+    "@types/lodash": "^4.14.110",
+    "@types/request": "^2.47.1",
+    "@types/winston": "^2.3.9",
+    "dotenv": "^6.0.0",
+    "lodash": "^4.17.10",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.5",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2"
+  }
+}
