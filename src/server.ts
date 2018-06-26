@@ -1,6 +1,7 @@
 class Animal {
   constructor(public name: string) {}
   move(meters: number) {
+    // comment
     console.log(this.name + " moved " + meters + "m.");
   }
 }

@@ -4,9 +4,14 @@
     "target": "es6",
     "noImplicitAny": true,
     "sourceMap": true,
+    "removeComments": true,
     "outDir": "dist"
   },
   "include": [
     "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
   ]
 }

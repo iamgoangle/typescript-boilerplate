@@ -1,4 +1,4 @@
-# Golf Typescript Boilerplate
+# Typescript Boilerplate
 
 Microsoft provide a good template to quick starting the project in 5 minutes, so with this link can be navigate you to good repository [https://www.typescriptlang.org/samples/index.html](https://www.typescriptlang.org/samples/index.html)
 
@@ -16,11 +16,13 @@ To run TSLint you would run command as below.
 
 # Build
 
-You might also be running some intermediate steps on your JavaScript, such as bundling or using another transpiler like **Babel**.
+You might also be running some intermediate steps on your JavaScript, such as bundling or using another transpiler like **Babel / Webpack with loader or Gulp.**
 
 But this project use **tsc** original command to transpile **.ts** to **.js**
 
-> This project using tsc command to build and build configuration will be in tsconfig.json
+> This project using tsc command to build and build configuration will be in **tsconfig.json**
+>
+> https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 
 `npm run build`
 
@@ -38,11 +40,7 @@ and the result will be appeared in `./dist`
 
 # Test
 
-`npm run test` <TBD>
-
-# Coverage
-
-<TBD>
+`npm run test`
 
 # Declaration file
 
